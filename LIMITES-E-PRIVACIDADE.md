@@ -1,3 +1,5 @@
+> Documentation: [English](README.md) | [Português (Brasil)](docs/pt-BR/installation.md)
+
 # Limites, segurança e interpretação
 
 Estes programas avaliam **registros fornecidos pelo usuário**, não a verdade definitiva registrada por bancos, SEFAZ ou prestadores.

@@ -1,9 +1,11 @@
-# Histórico da coleção
+**Language:** **English** | [Português (Brasil)](CHANGELOG.pt-BR.md)
 
-## Não lançado
+# Changelog
 
-- Biblioteca pública preparada com três skills de investigação independentes.
-- Metadados e comandos de instalação via `skills` CLI documentados.
-- Testes unitários e cenários sintéticos congelados preservados.
+## Unreleased
 
-A publicação de `v0.1.0` depende de autorização de licença, CI e teste de instalação a partir do GitHub público.
+- Independent public repository with example workflows and source code.
+- English and Brazilian Portuguese documentation.
+- Focused getting-started instructions and a consistent Fincraft signature.
+
+See [Releases](https://github.com/fincraft-solutions/wavern-skills/releases) for published versions.

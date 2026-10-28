@@ -1,11 +1,9 @@
-# Política de versões
+**Language:** **English** | [Português (Brasil)](RELEASES.pt-BR.md)
 
-**Versão por coleção, não por arquivo.** A tag `v0.1.0` identifica um snapshot consistente das três skills; consulte `skills/<nome>/CHANGELOG.md` para mudanças individuais. Não há publicação no npm: `npx skills add` instala a partir do repositório GitHub.
+# Releases
 
-- `PATCH`: melhoria de documentação, teste ou bug sem alterar contrato esperado.
-- `MINOR`: novo recurso, skill ou campo compatível, após validação.
-- `MAJOR`: alteração incompatível no contrato dos motores/saídas ou renomeação de skill.
+Wavern Skills versions are tagged at the repository level so the three skills can be used together from a known revision. Each skill has a changelog for changes in its own workflow or engine.
 
-A primeira versão deve ser um **pre-release**; testes internos com 42 cenários sintéticos não provam uso operacional. Anexe, quando necessário, um ZIP de cada pasta `skills/<nome>/` sem incluir dados reais; para o CLI a tag e o repositório bastam.
+The collection is installed directly from GitHub with `npx skills@latest add fincraft-solutions/wavern-skills`. No npm package is published by this repository.
 
-Manter changelog e release notes em português objetivo: o que mudou, como testar, limitações e caminho de migração.
+[Installation](docs/en/installation.md) · [GitHub releases](https://github.com/fincraft-solutions/wavern-skills/releases)

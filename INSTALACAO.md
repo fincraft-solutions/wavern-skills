@@ -1,3 +1,5 @@
+> Documentation: [English](docs/en/installation.md) | [Português (Brasil)](docs/pt-BR/installation.md)
+
 # Instalação sem mistério
 
 ## Usar apenas Python

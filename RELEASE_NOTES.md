@@ -1,10 +1,7 @@
-# Wavern Skills v0.1.0 — prévia pública
+**Language:** **English** | [Português (Brasil)](RELEASE_NOTES.pt-BR.md)
 
-Três skills com código Python determinístico e exemplos sintéticos.
+# Wavern Skills v0.1.0
 
-- Investigações: NF-e, possível pagamento duplicado e auditoria de tarifas.
-- Testes: 39 unitários reproduzidos; 42/42 cenários sintéticos congelados no pacote original.
-- Integrações externas e efetividade com agentes reais: não validadas.
-- Instalação seletiva via `npx skills add` deve ser testada após publicar.
+The first public snapshot of Wavern Skills, with source code, examples and a starting point for developers.
 
-Consulte `LIMITES-E-PRIVACIDADE.md` antes de usar dados próprios.
+Explore the [README](README.md) to get started and the [changelog](CHANGELOG.md) for subsequent updates.

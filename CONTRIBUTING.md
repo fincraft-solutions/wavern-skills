@@ -1,7 +1,9 @@
-# Contribuindo
+**Language:** **English** | [Português (Brasil)](CONTRIBUTING.pt-BR.md)
 
-Uma boa contribuição começa com um caso reproduzível. Abra uma issue explicando a expectativa, o resultado atual e **um exemplo totalmente sintético**; nunca envie logs fiscais reais, extratos, senhas ou informações de clientes.
+# Contributing to Wavern Skills
 
-Para propor uma correção, adicione um teste em `skills/<nome>/evals/` e mantenha a saída explícita sobre incertezas. Mudanças em motores determinísticos devem preservar os 42 casos congelados ou explicar publicamente a necessidade de rever uma versão futura do conjunto de avaliação.
+Good issues start with a case someone else can reproduce. Include the input, expected behavior and what happened instead. Use fabricated records in public examples and issues.
 
-Antes de enviar código em PR, consulte a licença atual do repositório e confirme que tem direitos para contribuir. Casos sintéticos em issues são sempre bem-vindos.
+For code changes, open a pull request with a focused description and the relevant regression checks. You can start with [`README.md`](README.md) and explore the [source](skills/).
+
+If you need to report a vulnerability, follow [SECURITY.md](SECURITY.md).

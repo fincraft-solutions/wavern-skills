@@ -1,63 +1,38 @@
+**Language:** **English** | [Português (Brasil)](README.pt-BR.md)
+
 # NF-e Incident Investigator
 
 ```text
-   ___  __________
-  |   ||   _____ /   FINCRAFT
-  |___||  |____/    OPEN LAB
-       |  |
-       |__|
+   ___
+  | __|   FINCRAFT / NFE-INCIDENT-INVESTIGATOR
+  | _|
+  |_|
 ```
 
-**Um 104 no lote não é autorização individual.**
+**Trace an NF-e incident from transmission logs to the individual document.**
 
-Rastreia chaves, ambiente, recibos e protocolos informados em logs. Mostra quando os registros sustentam **autorização reportada**, quando se contradizem e quando não basta concluir.
+Reconstruct an NF-e timeline from receipts, environment, document keys and protocol events. Follow the evidence through timeouts, batch responses and conflicting entries.
 
-A skill combina instruções em [`SKILL.md`](SKILL.md), contratos em [`references/`](references/) e um motor Python executável. Não é necessário criar conta na Wavern.
-
-## Um caso para testar
-
-```bash
-# Execute na pasta desta skill; Python 3.10+ (biblioteca padrão)
-python scripts/investigate.py --input examples/incident-lot-incomplete.json --out /tmp/nfe-incident-investigator.json
-```
-
-Procure o estado **`indeterminate`** e examine os caminhos de evidência e as lacunas no relatório. Os dados do exemplo são **sintéticos**. A saída também inclui um Markdown de leitura humana.
-
-**Fronteira:** Não consulta a SEFAZ, não valida certificado nem confirma a situação fiscal corrente.
-
-## Usar com agente de código
+## Install for your agent
 
 ```bash
 npx skills@latest add fincraft-solutions/wavern-skills --skill nfe-incident-investigator
 ```
 
-O comando depende de repositório público e ainda precisa de validação pós-publicação; sem CLI, copie a pasta inteira para o diretório de skills do seu agente. Veja [instruções de instalação](../../INSTALACAO.md).
+## Run a local example
 
-### Entrada e saída
-
-`events` (array de eventos), `target` (chave NF-e com 44 dígitos) e `target_env` (`producao` ou `homologacao`); opcionalmente eventos JSONL/CSV. Considere `source` uma referência interna informada pelo usuário, não evidência de autoridade.
-
-O programa é **somente leitura** dos arquivos de entrada; grava um JSON e um Markdown separados em `--out`. Mostra o estado no terminal. Consulte `references/OUTPUT_AND_SAFETY.md` e o contrato específico em `references/` para detalhes.
-
-### Limites
-
-Sem integração SEFAZ, sem assinatura ou conferência de certificado, sem parsing universal de logs de qualquer fornecedor, sem OCR, sem status fiscal corrente. A Skill não consulta bancos, adquirentes, SEFAZ ou a Wavern. Resultados são candidatos/alegações documentais, não prova externa. Não use arquivos reais em demos, repositórios, issues ou posts. Hospedar arquivos numa LLM em nuvem pode transmiti-los ao provedor escolhido.
-
-### Diagnóstico rápido
-
-- `python scripts/investigate.py --help` lista modos e parâmetros.
-- JSON inválido ou cabeçalhos CSV incompatíveis: normalize para os nomes do contrato; o programa não é conversor universal.
-- Arquivo sem informação suficiente: um estado inconclusivo é um resultado legítimo; não invente informações.
-- Execução só em chat sem Python: não alegar que o motor foi executado.
-
-### Instalação e distribuição
-
-Para um agente que admite pastas de Skills, coloque **esta pasta** no diretório de Skills apropriado do agente e siga o mecanismo de recarga dele. Instalação via `npx skills` requer publicação do repositório e teste em um ambiente compatível; veja [INSTALACAO.md](../../INSTALACAO.md). Consulte a licença do repositório antes de reutilizar ou distribuir o código.
-
-### Teste local
+From this skill's directory, with Python 3.10 or newer:
 
 ```bash
-python -m unittest discover -s evals -p 'test_*.py' -v
+python scripts/investigate.py --input examples/incident-lot-incomplete.json --out /tmp/nfe-incident-investigator.json
 ```
 
-Documentos: `SKILL.md` (fluxo do agente), `references/` (contratos), `examples/` (dados sintéticos) e `evals/` (testes). Versão **0.1.0** (primeira implementação S07). Código não implantado em produção. Nenhum ganho de produtividade comprovado com LLM.
+The sample shows a processed batch without sufficient evidence of a document-level authorization. Open the JSON report and its companion Markdown file in `/tmp`.
+
+## How it works
+
+The input uses `events, target, target_env`. Agent instructions live in [`SKILL.md`](SKILL.md), supported by contracts in [`references/`](references/). Explore sample inputs and outputs in [`examples/`](examples/).
+
+The investigator works with the evidence you supply. External verification and operational actions require additional integrations.
+
+[All skills](../../README.md) · [Installation](../../docs/en/installation.md) · [Source](scripts/)
