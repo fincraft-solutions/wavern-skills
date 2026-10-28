@@ -1,0 +1,25 @@
+{
+  "candidates": [],
+  "confirmed_duplicate_payment": false,
+  "excluded": [
+    {
+      "reference": "F1",
+      "sources": [
+        "payments.csv:A",
+        "payments.csv:B"
+      ],
+      "why": "one_transaction_refunded"
+    }
+  ],
+  "gaps": [],
+  "note": "Candidatura para revisão; não prova erro bancário ou direito a restituição. Nenhum banco foi consultado.",
+  "source_locations": [
+    "invoices.csv:2",
+    "payments.csv:A",
+    "payments.csv:B",
+    "refunds.csv:2"
+  ],
+  "state": "no_active_duplicate_with_refund_flag",
+  "unresolved": [],
+  "verification_questions": []
+}

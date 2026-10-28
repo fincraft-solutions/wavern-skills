@@ -1,0 +1,16 @@
+{
+  "events": [
+    {
+      "cstat": 100,
+      "env": "producao",
+      "id": "e1",
+      "key": "35000000000000000000000000000000000000000001",
+      "kind": "key_query",
+      "origin_claim": "sefaz_response",
+      "protocol": "P1",
+      "source": "a.log:3"
+    }
+  ],
+  "target": "35000000000000000000000000000000000000000001",
+  "target_env": "producao"
+}

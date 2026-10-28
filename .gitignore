@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+**/node_modules/
+**/saida/
+**/__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+*.log

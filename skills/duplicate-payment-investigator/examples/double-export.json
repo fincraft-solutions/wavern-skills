@@ -1,0 +1,34 @@
+{
+  "obligations": [
+    {
+      "amount": "100.00",
+      "creditor_id": "P1",
+      "currency": "BRL",
+      "period": "2026-10",
+      "reference": "F1",
+      "source": "invoices.csv:2"
+    }
+  ],
+  "payments": [
+    {
+      "amount": "100.00",
+      "currency": "BRL",
+      "end_to_end_id": "A",
+      "obligation_ref": "F1",
+      "payee_id": "P1",
+      "payment_id": "A",
+      "source": "payments.csv:A",
+      "status": "settled"
+    },
+    {
+      "amount": "100.00",
+      "currency": "BRL",
+      "end_to_end_id": "A",
+      "obligation_ref": "F1",
+      "payee_id": "P1",
+      "payment_id": "A",
+      "source": "payments.csv:A",
+      "status": "settled"
+    }
+  ]
+}

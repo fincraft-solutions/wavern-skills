@@ -1,0 +1,28 @@
+{
+  "confirmed_refund_right": false,
+  "external_provider_checked": false,
+  "items": [
+    {
+      "charged_mdr": "29.00",
+      "components": {},
+      "confirmed_refund_right": false,
+      "contract_source": null,
+      "difference": null,
+      "expected_mdr": null,
+      "external_provider_checked": false,
+      "gaps": [
+        "Duas ou mais condições compatíveis conflitantes; esclarecer vigência/contrato"
+      ],
+      "source_locations": [
+        "tx.csv:2"
+      ],
+      "state": "unverifiable_conflicting_contract",
+      "transaction_id": "T1"
+    }
+  ],
+  "note": "A comparação se limita aos componentes e contratos enviados; não comprova cobrança ilegal, erro do adquirente ou direito de restituição.",
+  "source_locations": [
+    "tx.csv:2"
+  ],
+  "state": "unverifiable_conflicting_contract"
+}

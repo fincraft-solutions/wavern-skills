@@ -1,0 +1,39 @@
+{
+  "confirmed_refund_right": false,
+  "external_provider_checked": false,
+  "items": [
+    {
+      "charged_mdr": "25.00",
+      "components": {
+        "charged_mdr": "25.00",
+        "currency": "BRL",
+        "expected_mdr": "25.00",
+        "fixed_fee_contract": "0.00",
+        "formula": "quantize(gross * mdr_percent / 100, 0.01, HALF_UP)",
+        "gross": "1000.00",
+        "mdr_percent": "2.50",
+        "rounding_rule": "HALF_UP"
+      },
+      "confirmed_refund_right": false,
+      "contract_source": "contract.txt:5",
+      "difference": "0.00",
+      "expected_mdr": "25.00",
+      "external_provider_checked": false,
+      "gaps": [
+        "MDR consistente; regra de antecipação não fornecida"
+      ],
+      "source_locations": [
+        "tx.csv:2",
+        "contract.txt:5"
+      ],
+      "state": "mdr_consistent_anticipation_unverifiable",
+      "transaction_id": "T1"
+    }
+  ],
+  "note": "A comparação se limita aos componentes e contratos enviados; não comprova cobrança ilegal, erro do adquirente ou direito de restituição.",
+  "source_locations": [
+    "contract.txt:5",
+    "tx.csv:2"
+  ],
+  "state": "mdr_consistent_anticipation_unverifiable"
+}

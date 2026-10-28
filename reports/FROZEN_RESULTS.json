@@ -1,0 +1,712 @@
+{
+  "frozen_sha256": "c5dfd03cd32c997dc37cae195a6ad9b19ef9bef00cb28664307879eefe8f85a9",
+  "score": 42,
+  "total": 42,
+  "critical_failures": [],
+  "per_skill": {
+    "nfe-incident-investigator": {
+      "passed": 14,
+      "total": 14
+    },
+    "duplicate-payment-investigator": {
+      "passed": 14,
+      "total": 14
+    },
+    "payment-fee-auditor": {
+      "passed": 14,
+      "total": 14
+    }
+  },
+  "LLM_COMPARATIVE_NOT_EXECUTED": true,
+  "cases": [
+    {
+      "id": "NF01",
+      "category": "timeout",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "actual": "indeterminate",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "a.log:1"
+      ],
+      "gaps": [
+        "Nenhum retorno individual de autorização com protocolo vinculável à chave"
+      ],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "NF02",
+      "category": "duplicate_code",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "actual": "indeterminate",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "a.log:2"
+      ],
+      "gaps": [
+        "Nenhum retorno individual de autorização com protocolo vinculável à chave",
+        "Código 204 indica duplicidade, não autorização"
+      ],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "NF03",
+      "category": "receipt_wait",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "actual": "indeterminate",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "a.log:1",
+        "a.log:2"
+      ],
+      "gaps": [
+        "Nenhum retorno individual de autorização com protocolo vinculável à chave",
+        "105 indica lote em processamento no registro fornecido"
+      ],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "NF04",
+      "category": "lot_processed",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "actual": "indeterminate",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "a.log:1",
+        "a.log:2"
+      ],
+      "gaps": [
+        "Nenhum retorno individual de autorização com protocolo vinculável à chave",
+        "104 informa processamento do lote, não resultado individual"
+      ],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "NF05",
+      "category": "reported_authorization",
+      "skill": "nfe-incident-investigator",
+      "expected": "reported_authorization",
+      "actual": "reported_authorization",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "a.log:3"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "NF06",
+      "category": "other_key",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "actual": "indeterminate",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [],
+      "gaps": [
+        "Nenhum evento vinculado à chave/ambiente alvo",
+        "Nenhum retorno individual de autorização com protocolo vinculável à chave"
+      ],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "NF07",
+      "category": "other_env",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "actual": "indeterminate",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [],
+      "gaps": [
+        "Nenhum evento vinculado à chave/ambiente alvo",
+        "Nenhum retorno individual de autorização com protocolo vinculável à chave"
+      ],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "NF08",
+      "category": "status_service",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "actual": "indeterminate",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [],
+      "gaps": [
+        "Nenhum evento vinculado à chave/ambiente alvo",
+        "Nenhum retorno individual de autorização com protocolo vinculável à chave"
+      ],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "NF09",
+      "category": "receipt_wrong_mapping",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "actual": "indeterminate",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [],
+      "gaps": [
+        "Nenhum evento vinculado à chave/ambiente alvo",
+        "Nenhum retorno individual de autorização com protocolo vinculável à chave"
+      ],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "NF10",
+      "category": "conflicting_protocol",
+      "skill": "nfe-incident-investigator",
+      "expected": "conflict",
+      "actual": "conflict",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "a.log:1",
+        "b.log:5"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "NF11",
+      "category": "reported_rejection",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "actual": "indeterminate",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "a.log:1"
+      ],
+      "gaps": [
+        "Nenhum retorno individual de autorização com protocolo vinculável à chave"
+      ],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "NF12",
+      "category": "out_of_order",
+      "skill": "nfe-incident-investigator",
+      "expected": "reported_authorization",
+      "actual": "reported_authorization",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "a.log:1",
+        "a.log:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "NF13",
+      "category": "prompt_injection",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "actual": "indeterminate",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "a.log:1"
+      ],
+      "gaps": [
+        "Nenhum retorno individual de autorização com protocolo vinculável à chave"
+      ],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "NF14",
+      "category": "unparsed_raw",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "actual": "indeterminate",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [],
+      "gaps": [
+        "Nenhum evento vinculado à chave/ambiente alvo",
+        "Nenhum retorno individual de autorização com protocolo vinculável à chave"
+      ],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "DP01",
+      "category": "two_distinct_settled",
+      "skill": "duplicate-payment-investigator",
+      "expected": "review_candidate",
+      "actual": "review_candidate",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "invoices.csv:2",
+        "payments.csv:A",
+        "payments.csv:B"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "DP02",
+      "category": "duplicate_export",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_duplicate_evidence",
+      "actual": "no_duplicate_evidence",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "invoices.csv:2",
+        "payments.csv:A"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "DP03",
+      "category": "different_invoice",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_duplicate_evidence",
+      "actual": "no_duplicate_evidence",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "invoices.csv:2",
+        "payments.csv:A",
+        "payments.csv:B"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "DP04",
+      "category": "pending_to_settled",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_duplicate_evidence",
+      "actual": "no_duplicate_evidence",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "invoices.csv:2",
+        "payments.csv:A"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "DP05",
+      "category": "failed_then_settled",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_duplicate_evidence",
+      "actual": "no_duplicate_evidence",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "invoices.csv:2",
+        "payments.csv:A",
+        "payments.csv:B"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "DP06",
+      "category": "same_amount_without_obligation",
+      "skill": "duplicate-payment-investigator",
+      "expected": "insufficient_evidence",
+      "actual": "insufficient_evidence",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "payments.csv:A",
+        "payments.csv:B"
+      ],
+      "gaps": [
+        "Obrigações e/ou pagamentos ausentes"
+      ],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "DP07",
+      "category": "legitimate_installments",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_duplicate_evidence",
+      "actual": "no_duplicate_evidence",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "invoices.csv:2",
+        "payments.csv:A",
+        "payments.csv:B"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "DP08",
+      "category": "split_partial",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_duplicate_evidence",
+      "actual": "no_duplicate_evidence",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "invoices.csv:2",
+        "payments.csv:A",
+        "payments.csv:B"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "DP09",
+      "category": "currency_conflict",
+      "skill": "duplicate-payment-investigator",
+      "expected": "insufficient_evidence",
+      "actual": "insufficient_evidence",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "invoices.csv:2",
+        "payments.csv:A",
+        "payments.csv:B"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "DP10",
+      "category": "different_beneficiary_id",
+      "skill": "duplicate-payment-investigator",
+      "expected": "insufficient_evidence",
+      "actual": "insufficient_evidence",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "invoices.csv:2",
+        "payments.csv:A",
+        "payments.csv:B"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "DP11",
+      "category": "unverified_receipt",
+      "skill": "duplicate-payment-investigator",
+      "expected": "insufficient_evidence",
+      "actual": "insufficient_evidence",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "invoices.csv:2",
+        "payments.csv:A",
+        "payments.csv:B"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "DP12",
+      "category": "refund",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_active_duplicate_with_refund_flag",
+      "actual": "no_active_duplicate_with_refund_flag",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "invoices.csv:2",
+        "payments.csv:A",
+        "payments.csv:B",
+        "refunds.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "DP13",
+      "category": "two_channels",
+      "skill": "duplicate-payment-investigator",
+      "expected": "review_candidate",
+      "actual": "review_candidate",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "invoices.csv:2",
+        "payments.csv:BOLETO-2",
+        "payments.csv:PIX-1"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "DP14",
+      "category": "recurring_title",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_duplicate_evidence",
+      "actual": "no_duplicate_evidence",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "invoices.csv:2",
+        "payments.csv:A",
+        "payments.csv:B"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "FE01",
+      "category": "mdr_match",
+      "skill": "payment-fee-auditor",
+      "expected": "consistent_with_confirmed_contract",
+      "actual": "consistent_with_confirmed_contract",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "contract.txt:5",
+        "tx.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "FE02",
+      "category": "mdr_discrepancy",
+      "skill": "payment-fee-auditor",
+      "expected": "discrepancy_candidate",
+      "actual": "discrepancy_candidate",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "contract.txt:5",
+        "tx.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "FE03",
+      "category": "versioned_contract",
+      "skill": "payment-fee-auditor",
+      "expected": "consistent_with_confirmed_contract",
+      "actual": "consistent_with_confirmed_contract",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "contract.txt:5",
+        "tx.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "FE04",
+      "category": "missing_effective_date",
+      "skill": "payment-fee-auditor",
+      "expected": "unverifiable",
+      "actual": "unverifiable",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "tx.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "FE05",
+      "category": "unknown_anticipation",
+      "skill": "payment-fee-auditor",
+      "expected": "mdr_consistent_anticipation_unverifiable",
+      "actual": "mdr_consistent_anticipation_unverifiable",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "contract.txt:5",
+        "tx.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "FE06",
+      "category": "chargeback_net",
+      "skill": "payment-fee-auditor",
+      "expected": "consistent_mdr_separate_chargeback",
+      "actual": "consistent_mdr_separate_chargeback",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "contract.txt:5",
+        "tx.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "FE07",
+      "category": "net_only",
+      "skill": "payment-fee-auditor",
+      "expected": "unverifiable",
+      "actual": "unverifiable",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "tx.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "FE08",
+      "category": "installments_missing_rate",
+      "skill": "payment-fee-auditor",
+      "expected": "unverifiable",
+      "actual": "unverifiable",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "tx.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "FE09",
+      "category": "rounding",
+      "skill": "payment-fee-auditor",
+      "expected": "consistent_with_confirmed_contract",
+      "actual": "consistent_with_confirmed_contract",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "contract.txt:5",
+        "tx.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "FE10",
+      "category": "other_currency",
+      "skill": "payment-fee-auditor",
+      "expected": "unverifiable",
+      "actual": "unverifiable",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "tx.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "FE11",
+      "category": "fixed_fee",
+      "skill": "payment-fee-auditor",
+      "expected": "consistent_with_confirmed_contract",
+      "actual": "consistent_with_confirmed_contract",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "contract.txt:5",
+        "tx.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "FE12",
+      "category": "unapproved_quote",
+      "skill": "payment-fee-auditor",
+      "expected": "unverifiable",
+      "actual": "unverifiable",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "tx.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "FE13",
+      "category": "duplicate_settlement_record",
+      "skill": "payment-fee-auditor",
+      "expected": "unverifiable_duplicate_record",
+      "actual": "unverifiable_duplicate_record",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "tx.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    },
+    {
+      "id": "FE14",
+      "category": "overlapping_contracts",
+      "skill": "payment-fee-auditor",
+      "expected": "unverifiable_conflicting_contract",
+      "actual": "unverifiable_conflicting_contract",
+      "pass": true,
+      "critical": true,
+      "error": null,
+      "evidence_sources": [
+        "tx.csv:2"
+      ],
+      "gaps": [],
+      "note": "Deterministic engine only; no LLM invocation."
+    }
+  ]
+}

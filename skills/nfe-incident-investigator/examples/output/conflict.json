@@ -1,0 +1,65 @@
+{
+  "basis": [
+    {
+      "cstat": 100,
+      "id": "e1",
+      "key": "35000000000000000000000000000000000000000001",
+      "kind": "key_query",
+      "protocol": "PA",
+      "receipt": null,
+      "source": "a.log:1",
+      "timestamp": null
+    },
+    {
+      "cstat": 100,
+      "id": "e2",
+      "key": "35000000000000000000000000000000000000000001",
+      "kind": "key_query",
+      "protocol": "PB",
+      "receipt": null,
+      "source": "b.log:5",
+      "timestamp": null
+    }
+  ],
+  "conflicts": [
+    "Protocolos distintos reportados para a mesma chave e ambiente"
+  ],
+  "external_sefaz_checked": false,
+  "gaps": [],
+  "note": "Resultados refletem apenas eventos fornecidos, cuja autenticidade não foi verificada.",
+  "reported_state": "conflict",
+  "safe_checks": [
+    "Conferir a situação na consulta por chave da SEFAZ competente no mesmo ambiente antes de decidir por reenvio"
+  ],
+  "source_locations": [
+    "a.log:1",
+    "b.log:5"
+  ],
+  "state": "conflict",
+  "subject": {
+    "environment": "producao",
+    "key": "35000000000000000000000000000000000000000001"
+  },
+  "timeline": [
+    {
+      "cstat": 100,
+      "id": "e1",
+      "key": "35000000000000000000000000000000000000000001",
+      "kind": "key_query",
+      "protocol": "PA",
+      "receipt": null,
+      "source": "a.log:1",
+      "timestamp": null
+    },
+    {
+      "cstat": 100,
+      "id": "e2",
+      "key": "35000000000000000000000000000000000000000001",
+      "kind": "key_query",
+      "protocol": "PB",
+      "receipt": null,
+      "source": "b.log:5",
+      "timestamp": null
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "python": "3.13.5",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "skills": {
+    "duplicate-payment-investigator": {
+      "yaml_valid": true,
+      "frontmatter_description_chars": 168,
+      "deterministic_tests_passed": 13,
+      "help_ok": true,
+      "examples_json": 3,
+      "samples_output": 3,
+      "requires_wavern_api": false,
+      "requires_python_third_party": false
+    },
+    "nfe-incident-investigator": {
+      "yaml_valid": true,
+      "frontmatter_description_chars": 212,
+      "deterministic_tests_passed": 12,
+      "help_ok": true,
+      "examples_json": 3,
+      "samples_output": 3,
+      "requires_wavern_api": false,
+      "requires_python_third_party": false
+    },
+    "payment-fee-auditor": {
+      "yaml_valid": true,
+      "frontmatter_description_chars": 203,
+      "deterministic_tests_passed": 14,
+      "help_ok": true,
+      "examples_json": 3,
+      "samples_output": 3,
+      "requires_wavern_api": false,
+      "requires_python_third_party": false
+    }
+  },
+  "case_sha256": "c5dfd03cd32c997dc37cae195a6ad9b19ef9bef00cb28664307879eefe8f85a9",
+  "frozen_42_score": 42,
+  "frozen_42_total": 42,
+  "LLM_COMPARATIVE_NOT_EXECUTED": true,
+  "zip_extraction_checks": [
+    {
+      "zip": "wavern-duplicate-payment-investigator-S07-20261023.zip",
+      "skill": "duplicate-payment-investigator",
+      "result": "PASS - installed/unzipped and unit tests executed"
+    },
+    {
+      "zip": "wavern-nfe-incident-investigator-S07-20261023.zip",
+      "skill": "nfe-incident-investigator",
+      "result": "PASS - installed/unzipped and unit tests executed"
+    },
+    {
+      "zip": "wavern-payment-fee-auditor-S07-20261023.zip",
+      "skill": "payment-fee-auditor",
+      "result": "PASS - installed/unzipped and unit tests executed"
+    },
+    {
+      "zip": "wavern-agent-skills-S07-final-20261023.zip",
+      "skill": "duplicate-payment-investigator",
+      "result": "PASS - installed/unzipped and unit tests executed"
+    },
+    {
+      "zip": "wavern-agent-skills-S07-final-20261023.zip",
+      "skill": "nfe-incident-investigator",
+      "result": "PASS - installed/unzipped and unit tests executed"
+    },
+    {
+      "zip": "wavern-agent-skills-S07-final-20261023.zip",
+      "skill": "payment-fee-auditor",
+      "result": "PASS - installed/unzipped and unit tests executed"
+    }
+  ],
+  "zip_files": [
+    {
+      "path": "/mnt/data/wavern-duplicate-payment-investigator-S07-20261023.zip",
+      "bytes": 15106,
+      "file_count": 17,
+      "sha256": "9ce7c2cf39de338af8d60bbc491604643ea1133f0b07cf59c473bb85f63e33df"
+    },
+    {
+      "path": "/mnt/data/wavern-nfe-incident-investigator-S07-20261023.zip",
+      "bytes": 15027,
+      "file_count": 17,
+      "sha256": "b52376ad687f4d2dfa94891abc783ed96a3cc786904da2a34a0cffbd8bd9019f"
+    },
+    {
+      "path": "/mnt/data/wavern-payment-fee-auditor-S07-20261023.zip",
+      "bytes": 15735,
+      "file_count": 17,
+      "sha256": "3db23d6e45c925315799a70364bfca4e6e6fe872bc124e2157a7371434c935a6"
+    },
+    {
+      "path": "/mnt/data/wavern-agent-skills-S07-final-20261023.zip",
+      "bytes": 235120,
+      "file_count": 151,
+      "sha256": "ee325e9822bb413f01468e3f7f3461cbad10e45cdb1e00c8e504e9beca830f44"
+    }
+  ],
+  "unit_tests_total": 39,
+  "offline_only": true,
+  "metadata_validator": "PyYAML structural + name/description checks (not full host install)"
+}

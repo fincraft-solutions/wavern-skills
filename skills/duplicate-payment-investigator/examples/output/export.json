@@ -1,0 +1,27 @@
+{
+  "candidates": [],
+  "confirmed_duplicate_payment": false,
+  "excluded": [
+    {
+      "reference": "F1",
+      "source": "payments.csv:A",
+      "why": "same_transaction_reexported"
+    },
+    {
+      "reference": "F1",
+      "sources": [
+        "payments.csv:A"
+      ],
+      "why": "fewer_than_two_independent_settled_transactions"
+    }
+  ],
+  "gaps": [],
+  "note": "Candidatura para revisão; não prova erro bancário ou direito a restituição. Nenhum banco foi consultado.",
+  "source_locations": [
+    "invoices.csv:2",
+    "payments.csv:A"
+  ],
+  "state": "no_duplicate_evidence",
+  "unresolved": [],
+  "verification_questions": []
+}

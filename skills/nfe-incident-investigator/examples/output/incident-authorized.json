@@ -1,0 +1,42 @@
+{
+  "basis": [
+    {
+      "cstat": 100,
+      "id": "e1",
+      "key": "35000000000000000000000000000000000000000001",
+      "kind": "key_query",
+      "protocol": "P1",
+      "receipt": null,
+      "source": "a.log:3",
+      "timestamp": null
+    }
+  ],
+  "conflicts": [],
+  "external_sefaz_checked": false,
+  "gaps": [],
+  "note": "Resultados refletem apenas eventos fornecidos, cuja autenticidade não foi verificada.",
+  "reported_state": "reported_authorization",
+  "safe_checks": [
+    "Conferir a situação na consulta por chave da SEFAZ competente no mesmo ambiente antes de decidir por reenvio"
+  ],
+  "source_locations": [
+    "a.log:3"
+  ],
+  "state": "reported_authorization",
+  "subject": {
+    "environment": "producao",
+    "key": "35000000000000000000000000000000000000000001"
+  },
+  "timeline": [
+    {
+      "cstat": 100,
+      "id": "e1",
+      "key": "35000000000000000000000000000000000000000001",
+      "kind": "key_query",
+      "protocol": "P1",
+      "receipt": null,
+      "source": "a.log:3",
+      "timestamp": null
+    }
+  ]
+}

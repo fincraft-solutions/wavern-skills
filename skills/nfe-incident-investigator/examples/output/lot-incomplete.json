@@ -1,0 +1,66 @@
+{
+  "basis": [
+    {
+      "cstat": 103,
+      "id": "e1",
+      "key": "35000000000000000000000000000000000000000001",
+      "kind": "send",
+      "protocol": null,
+      "receipt": "R1",
+      "source": "a.log:1",
+      "timestamp": null
+    },
+    {
+      "cstat": 104,
+      "id": "e2",
+      "key": null,
+      "kind": "receipt_query",
+      "protocol": null,
+      "receipt": "R1",
+      "source": "a.log:2",
+      "timestamp": null
+    }
+  ],
+  "conflicts": [],
+  "external_sefaz_checked": false,
+  "gaps": [
+    "Nenhum retorno individual de autorização com protocolo vinculável à chave",
+    "104 informa processamento do lote, não resultado individual"
+  ],
+  "note": "Resultados refletem apenas eventos fornecidos, cuja autenticidade não foi verificada.",
+  "reported_state": "indeterminate",
+  "safe_checks": [
+    "Conferir a situação na consulta por chave da SEFAZ competente no mesmo ambiente antes de decidir por reenvio"
+  ],
+  "source_locations": [
+    "a.log:1",
+    "a.log:2"
+  ],
+  "state": "indeterminate",
+  "subject": {
+    "environment": "producao",
+    "key": "35000000000000000000000000000000000000000001"
+  },
+  "timeline": [
+    {
+      "cstat": 103,
+      "id": "e1",
+      "key": "35000000000000000000000000000000000000000001",
+      "kind": "send",
+      "protocol": null,
+      "receipt": "R1",
+      "source": "a.log:1",
+      "timestamp": null
+    },
+    {
+      "cstat": 104,
+      "id": "e2",
+      "key": null,
+      "kind": "receipt_query",
+      "protocol": null,
+      "receipt": "R1",
+      "source": "a.log:2",
+      "timestamp": null
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+# Contrato de identidade econômica (planejamento S06)
+Obrigações identificadas por `obligation_id`, `creditor_id`, `reference`, `currency`, `amount`, `due_date`, `period`, `installment`; pagamentos por `payment_id`, `end_to_end_id` quando houver, `beneficiary_id`, `currency`, `amount`, `posted_at`, `status`, `obligation_ref`, `source_file:row`.
+
+Distinct `payment_id` não prova duas liquidações; extratos repetidos podem representar a mesma transação. Status de comprovante não substitui confirmação bancária. Vínculo de título exige referência documental consistente e beneficiário identificável. Duas parcelas legítimas do mesmo título não são duplicidade. Estorno/devolução distinguem situação presente do histórico. Exibir candidato, nunca marcar duplicidade financeira como definitivamente provada sem confirmação externa.

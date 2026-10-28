@@ -1,0 +1,24 @@
+{
+  "events": [
+    {
+      "cstat": 103,
+      "env": "producao",
+      "id": "e1",
+      "key": "35000000000000000000000000000000000000000001",
+      "kind": "send",
+      "receipt": "R1",
+      "source": "a.log:1"
+    },
+    {
+      "cstat": 104,
+      "docs": [],
+      "env": "producao",
+      "id": "e2",
+      "kind": "receipt_query",
+      "receipt": "R1",
+      "source": "a.log:2"
+    }
+  ],
+  "target": "35000000000000000000000000000000000000000001",
+  "target_env": "producao"
+}

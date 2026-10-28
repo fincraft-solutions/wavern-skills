@@ -1,0 +1,322 @@
+{
+  "baseline_definition": {
+    "b0": "heurística ingênua, usa último cStat / mesmo valor+beneficiário / primeira taxa ignorando contratos",
+    "b1": "mesmo motor determinístico de cada Skill, acionado diretamente sem LLM; igual a T nos casos estruturados",
+    "T": "Não foi executado fluxo LLM+Skill; apenas motor disponível"
+  },
+  "scores": {
+    "duplicate-payment-investigator": {
+      "b0": 3,
+      "b1_engine_only": 14,
+      "total": 14
+    },
+    "payment-fee-auditor": {
+      "b0": 5,
+      "b1_engine_only": 14,
+      "total": 14
+    },
+    "nfe-incident-investigator": {
+      "b0": 10,
+      "b1_engine_only": 14,
+      "total": 14
+    }
+  },
+  "cases": [
+    {
+      "id": "NF01",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "baseline_b0": "indeterminate",
+      "b0_correct": true
+    },
+    {
+      "id": "NF02",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "baseline_b0": "indeterminate",
+      "b0_correct": true
+    },
+    {
+      "id": "NF03",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "baseline_b0": "indeterminate",
+      "b0_correct": true
+    },
+    {
+      "id": "NF04",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "baseline_b0": "indeterminate",
+      "b0_correct": true
+    },
+    {
+      "id": "NF05",
+      "skill": "nfe-incident-investigator",
+      "expected": "reported_authorization",
+      "baseline_b0": "reported_authorization",
+      "b0_correct": true
+    },
+    {
+      "id": "NF06",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "baseline_b0": "reported_authorization",
+      "b0_correct": false
+    },
+    {
+      "id": "NF07",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "baseline_b0": "reported_authorization",
+      "b0_correct": false
+    },
+    {
+      "id": "NF08",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "baseline_b0": "indeterminate",
+      "b0_correct": true
+    },
+    {
+      "id": "NF09",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "baseline_b0": "indeterminate",
+      "b0_correct": true
+    },
+    {
+      "id": "NF10",
+      "skill": "nfe-incident-investigator",
+      "expected": "conflict",
+      "baseline_b0": "reported_authorization",
+      "b0_correct": false
+    },
+    {
+      "id": "NF11",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "baseline_b0": "indeterminate",
+      "b0_correct": true
+    },
+    {
+      "id": "NF12",
+      "skill": "nfe-incident-investigator",
+      "expected": "reported_authorization",
+      "baseline_b0": "indeterminate",
+      "b0_correct": false
+    },
+    {
+      "id": "NF13",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "baseline_b0": "indeterminate",
+      "b0_correct": true
+    },
+    {
+      "id": "NF14",
+      "skill": "nfe-incident-investigator",
+      "expected": "indeterminate",
+      "baseline_b0": "indeterminate",
+      "b0_correct": true
+    },
+    {
+      "id": "DP01",
+      "skill": "duplicate-payment-investigator",
+      "expected": "review_candidate",
+      "baseline_b0": "review_candidate",
+      "b0_correct": true
+    },
+    {
+      "id": "DP02",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_duplicate_evidence",
+      "baseline_b0": "review_candidate",
+      "b0_correct": false
+    },
+    {
+      "id": "DP03",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_duplicate_evidence",
+      "baseline_b0": "review_candidate",
+      "b0_correct": false
+    },
+    {
+      "id": "DP04",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_duplicate_evidence",
+      "baseline_b0": "review_candidate",
+      "b0_correct": false
+    },
+    {
+      "id": "DP05",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_duplicate_evidence",
+      "baseline_b0": "review_candidate",
+      "b0_correct": false
+    },
+    {
+      "id": "DP06",
+      "skill": "duplicate-payment-investigator",
+      "expected": "insufficient_evidence",
+      "baseline_b0": "review_candidate",
+      "b0_correct": false
+    },
+    {
+      "id": "DP07",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_duplicate_evidence",
+      "baseline_b0": "review_candidate",
+      "b0_correct": false
+    },
+    {
+      "id": "DP08",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_duplicate_evidence",
+      "baseline_b0": "no_duplicate_evidence",
+      "b0_correct": true
+    },
+    {
+      "id": "DP09",
+      "skill": "duplicate-payment-investigator",
+      "expected": "insufficient_evidence",
+      "baseline_b0": "review_candidate",
+      "b0_correct": false
+    },
+    {
+      "id": "DP10",
+      "skill": "duplicate-payment-investigator",
+      "expected": "insufficient_evidence",
+      "baseline_b0": "no_duplicate_evidence",
+      "b0_correct": false
+    },
+    {
+      "id": "DP11",
+      "skill": "duplicate-payment-investigator",
+      "expected": "insufficient_evidence",
+      "baseline_b0": "review_candidate",
+      "b0_correct": false
+    },
+    {
+      "id": "DP12",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_active_duplicate_with_refund_flag",
+      "baseline_b0": "review_candidate",
+      "b0_correct": false
+    },
+    {
+      "id": "DP13",
+      "skill": "duplicate-payment-investigator",
+      "expected": "review_candidate",
+      "baseline_b0": "review_candidate",
+      "b0_correct": true
+    },
+    {
+      "id": "DP14",
+      "skill": "duplicate-payment-investigator",
+      "expected": "no_duplicate_evidence",
+      "baseline_b0": "review_candidate",
+      "b0_correct": false
+    },
+    {
+      "id": "FE01",
+      "skill": "payment-fee-auditor",
+      "expected": "consistent_with_confirmed_contract",
+      "baseline_b0": "consistent_with_confirmed_contract",
+      "b0_correct": true
+    },
+    {
+      "id": "FE02",
+      "skill": "payment-fee-auditor",
+      "expected": "discrepancy_candidate",
+      "baseline_b0": "discrepancy_candidate",
+      "b0_correct": true
+    },
+    {
+      "id": "FE03",
+      "skill": "payment-fee-auditor",
+      "expected": "consistent_with_confirmed_contract",
+      "baseline_b0": "discrepancy_candidate",
+      "b0_correct": false
+    },
+    {
+      "id": "FE04",
+      "skill": "payment-fee-auditor",
+      "expected": "unverifiable",
+      "baseline_b0": "discrepancy_candidate",
+      "b0_correct": false
+    },
+    {
+      "id": "FE05",
+      "skill": "payment-fee-auditor",
+      "expected": "mdr_consistent_anticipation_unverifiable",
+      "baseline_b0": "consistent_with_confirmed_contract",
+      "b0_correct": false
+    },
+    {
+      "id": "FE06",
+      "skill": "payment-fee-auditor",
+      "expected": "consistent_mdr_separate_chargeback",
+      "baseline_b0": "consistent_with_confirmed_contract",
+      "b0_correct": false
+    },
+    {
+      "id": "FE07",
+      "skill": "payment-fee-auditor",
+      "expected": "unverifiable",
+      "baseline_b0": "unverifiable",
+      "b0_correct": true
+    },
+    {
+      "id": "FE08",
+      "skill": "payment-fee-auditor",
+      "expected": "unverifiable",
+      "baseline_b0": "discrepancy_candidate",
+      "b0_correct": false
+    },
+    {
+      "id": "FE09",
+      "skill": "payment-fee-auditor",
+      "expected": "consistent_with_confirmed_contract",
+      "baseline_b0": "consistent_with_confirmed_contract",
+      "b0_correct": true
+    },
+    {
+      "id": "FE10",
+      "skill": "payment-fee-auditor",
+      "expected": "unverifiable",
+      "baseline_b0": "consistent_with_confirmed_contract",
+      "b0_correct": false
+    },
+    {
+      "id": "FE11",
+      "skill": "payment-fee-auditor",
+      "expected": "consistent_with_confirmed_contract",
+      "baseline_b0": "consistent_with_confirmed_contract",
+      "b0_correct": true
+    },
+    {
+      "id": "FE12",
+      "skill": "payment-fee-auditor",
+      "expected": "unverifiable",
+      "baseline_b0": "discrepancy_candidate",
+      "b0_correct": false
+    },
+    {
+      "id": "FE13",
+      "skill": "payment-fee-auditor",
+      "expected": "unverifiable_duplicate_record",
+      "baseline_b0": "consistent_with_confirmed_contract",
+      "b0_correct": false
+    },
+    {
+      "id": "FE14",
+      "skill": "payment-fee-auditor",
+      "expected": "unverifiable_conflicting_contract",
+      "baseline_b0": "discrepancy_candidate",
+      "b0_correct": false
+    }
+  ],
+  "comparative_LLM_executed": false,
+  "note": "Baseline forte empata com motor integrado, portanto não há evidência de ganho causal da Skill como comportamento de LLM."
+}

@@ -1,0 +1,35 @@
+{
+  "candidates": [
+    {
+      "currency": "BRL",
+      "obligation_amount": "100.00",
+      "payment_ids": [
+        "A",
+        "B"
+      ],
+      "reason": "total de duas ou mais transações liquidadas excede o valor da mesma obrigação",
+      "reference": "F1",
+      "settled_total": "200.00",
+      "sources": [
+        "invoices.csv:2",
+        "payments.csv:A",
+        "payments.csv:B"
+      ]
+    }
+  ],
+  "confirmed_duplicate_payment": false,
+  "excluded": [],
+  "gaps": [],
+  "note": "Candidatura para revisão; não prova erro bancário ou direito a restituição. Nenhum banco foi consultado.",
+  "source_locations": [
+    "invoices.csv:2",
+    "payments.csv:A",
+    "payments.csv:B"
+  ],
+  "state": "review_candidate",
+  "unresolved": [],
+  "verification_questions": [
+    "Confirmar em extrato bancário independente que cada identificador corresponde a débito liquidado",
+    "Confirmar com o credor a mesma obrigação e eventual estorno antes de qualquer solicitação de devolução"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "rates": [
+    {
+      "approved_by_user": true,
+      "channel": "online",
+      "contract_id": "C1",
+      "currency": "BRL",
+      "effective_from": "2026-10-01",
+      "effective_to": "2026-10-31",
+      "fixed_fee": "0.00",
+      "installments": 1,
+      "mdr_percent": "2.50",
+      "modality": "credit_1x",
+      "rounding_rule": "HALF_UP",
+      "source": "contract.txt:5",
+      "version": "v1"
+    }
+  ],
+  "transactions": [
+    {
+      "channel": "online",
+      "charged_mdr": "29.00",
+      "currency": "BRL",
+      "gross": "1000.00",
+      "id": "T1",
+      "installments": 1,
+      "modality": "credit_1x",
+      "occurred_at": "2026-10-10",
+      "source": "tx.csv:2"
+    }
+  ]
+}
